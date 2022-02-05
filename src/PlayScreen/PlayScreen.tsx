@@ -8,7 +8,7 @@ const PlayScreen: React.FC = () => {
   const maxLives: number = 3;
   const [maxScore, setMaxScore] = useState<number>(0);
   const [lives, setLives] = useState<number>(maxLives);
-  const [score, setScore] = useState<number>(0);
+  const [score, setScore] = useState<number>(-1);
 
   useEffect(() => {
     setLives(maxLives);
@@ -28,7 +28,6 @@ const PlayScreen: React.FC = () => {
         />
         : null
       }
-      Let's Play!
       <Gameboard
         lives={lives}
         score={score}

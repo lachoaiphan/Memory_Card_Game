@@ -6,10 +6,18 @@ import {  } from 'react-router-dom';
 const StartScreen:  React.FC = () => {
 
   return (
-    <div>
-      <h1>Memory Card Game</h1>
-      <h4>Technology Edition</h4>
-      <StartButton />
+    <div
+      className='start-screen'
+    >
+      <div>
+        <h1>Memory Card Game</h1>
+      </div>
+      <div>
+        <h4>Technology Edition</h4>
+      </div>
+      <div>
+        <StartButton />
+      </div>
     </div>
   )
 }

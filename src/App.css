@@ -40,10 +40,18 @@
 .card {
   border: 2px solid #000000;
   cursor: pointer;
-  width: 60px;
-  height: 60px;
-  padding: 40px;
+  padding: 20px;
   margin: 10px;
+  font-size: 40px;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.card:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .card-container {
@@ -51,6 +59,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
+  width: 400px;
 }
 
 .modal {
@@ -83,8 +92,35 @@
   position: relative;
 }
 
+.gameboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 .play-button {
   border: 3px solid #000000;
+  padding: 10px 20px;
+  text-decoration: none;
   color: #000000;
   cursor: pointer;
+  font-weight: bold;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+}
+
+.play-button:hover {
+  background-color: #000000;
+  color: #ffffff;
 }
